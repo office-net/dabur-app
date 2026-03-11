@@ -1,18 +1,20 @@
 <html>
-<body>
-
+<head>
+<title>Dabur Employee App</title>
 <script>
-var pass = prompt("Enter Employee Password");
-if(pass != "dabur123"){
+
+var password = prompt("Enter Dabur Employee Password");
+
+if(password != "dabur123"){
     document.write("Access Denied");
+}else{
+    document.write('<h2>Dabur Employee App</h2>');
+    document.write('<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/office-net/dabur-app/main/manifest.plist">Install Dabur App</a>');
 }
+
 </script>
+</head>
 
-<h2>Dabur Employee App</h2>
-
-<a href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/office-net/dabur-app/main/manifest.plist">
-Install Dabur App
-</a>
-
+<body>
 </body>
 </html>
